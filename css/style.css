@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+	text-align: center;
+}
+main{
+	padding: 20px;
+	padding-top: 60px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_content,
+.right_content{
+	padding: 20px;
+	width: 45%;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+	border: 5px ridge thin #3A0708;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 17px;
+}
+
+
+.zoom-image {
+    display: block;
+    width: 400px; 
+    transition: transform 0.3s ease;
+}
+
+.zoom-image:hover {
+    transform: scale(1.1); 
+}
+
+.header, .footer {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav ul {
+	background-color:darkturquoise;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 150px; /* Adjust dropdown width as needed */
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    display: block;
+    margin: 0;
+}
+
+.dropdown li a {
+    padding: 10px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: #555;
+}
+.logo {
+	width: 80px;
+    height: 80px; 
+    margin-top: 10px; 
+}
+
+/***********************************************/
+/* Contact Page CSS */
+/***********************************************/
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Input and textarea styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    background-color: darkturquoise;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #008080;
+}
+
+/* Character count display */
+.char-count {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px; /* Add some space between textarea and character count */
+}
+
+.exceed-limit {
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 14px;
+    }
+}
+
+
+
+/***********************************************/
+.store-notice {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    padding: 10px;
+    text-align: center;
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+/***********************************************/
+/* SHOP page css */
+/***********************************************/
+.productsList{
+	padding: 50px;
+}
+.product{
+	padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+	border: 5px ridge thin #3A0708;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 17px;
+}
+.more-details,
+.add-to-cart {
+	background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.add-to-cart{
+	    background-color: #4CAF50; 
+}
+.more-details:hover,
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+.product_img{
+	widows: 300px;
+	height: 200px;
+}
+.size {
+    margin-top: 10px;
+}
+
+.size p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.option {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.option:hover {
+    background-color: #ddd;
+}
+.checkout{
+		background-color: blue;
+	    color: white;
+
+
+}
